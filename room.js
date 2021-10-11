@@ -50,7 +50,14 @@ function redirectTo(name) {
 getData();
 
 function log_out() {
-      localStorage.removeItem("Let's Chat Website User Name");
-      localStorage.removeItem("Let's Chat Room_Key");
-      window.location.replace("index.html");
+      firebase.auth().signOut().then(() => {
+            localStorage.removeItem("Let's Chat Website User Name");
+            localStorage.removeItem("Let's Chat Room_Key");
+            window.location.replace("index.html");
+      }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.error(errorCode);
+            alert(errorMessage);
+      });
 }
