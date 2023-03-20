@@ -1,12 +1,13 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyBSN_uMmHOmoOM-UwsU8CpKiXQ0IRvK5wU",
-      authDomain: "lets-chat-pro.firebaseapp.com",
-      databaseURL: "https://lets-chat-pro-default-rtdb.firebaseio.com",
-      projectId: "lets-chat-pro",
-      storageBucket: "lets-chat-pro.appspot.com",
-      messagingSenderId: "84120085307",
-      appId: "1:84120085307:web:9b2239f97f014bac6a0d1e"
-};
+      apiKey: "AIzaSyBKL3FA6uVkEkVlsQ1tsq6m-n3x8TmBG5w",
+      authDomain: "secret-society-9a963.firebaseapp.com",
+      databaseURL: "https://secret-society-9a963-default-rtdb.firebaseio.com",
+      projectId: "secret-society-9a963",
+      storageBucket: "secret-society-9a963.appspot.com",
+      messagingSenderId: "973739609418",
+      appId: "1:973739609418:web:9983d71e04a8874b8bc5b3",
+      measurementId: "G-X7D9MELV5Y"
+    };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
