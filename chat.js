@@ -13,6 +13,7 @@ firebase.initializeApp(firebaseConfig);
 
 var user_name = localStorage.getItem("Let's Chat Website User Name");
 var room_key = localStorage.getItem("Let's Chat Room_Key");
+var input = document.getElementById("message");
 
 function send() {
       var message = document.getElementById("message").value;
@@ -23,6 +24,14 @@ function send() {
       });
       document.getElementById("message").value = "";
 }
+
+input.addEventListener("keypress", function(event) {
+      event.preventDefault();
+
+      if(event.key == "Enter") {
+            document.getElementById("send").click();
+      }
+});
 
 function getData() { 
       firebase.database().ref("messages/" + room_key).on('value', function(snapshot) { 
@@ -55,12 +64,19 @@ getData();
 function updateLikes(messageid) {
       console.log("Clicked on liked button - " + messageid);
       var likes = document.getElementById(messageid).value;
-      var updated_like = Number(likes) + 1;
-      console.log(updated_like);
+      if (likes == "0") {
+            var updated_like = Number(likes) + 1;
+            console.log(updated_like);
 
-      firebase.database().ref("messages/" + room_key).child(messageid).update({
-            like: updated_like
-      });
+            firebase.database().ref("messages/" + room_key).child(messageid).update({
+                  like: updated_like
+            });
+      }
+      else {
+            var waste = 1;
+            waste += 1;
+            console.log(waste)
+      }
 }
 
 function leavechat() {
