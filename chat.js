@@ -1,12 +1,12 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyBJeMPQagpmNm8MGsHhw9aBlwoVU9yTegg",
-      authDomain: "enjoychatting-pro.firebaseapp.com",
-      databaseURL: "https://enjoychatting-pro-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "enjoychatting-pro",
-      storageBucket: "enjoychatting-pro.appspot.com",
-      messagingSenderId: "509860403153",
-      appId: "1:509860403153:web:1680629d8b641e2455f2f0",
-      measurementId: "G-52P9TL2VQM"
+      apiKey: "AIzaSyAtr61FngCCp8qjrAUWCIZiyHAl7c8ELXs",
+  authDomain: "cv-int-chat.firebaseapp.com",
+  databaseURL: "https://cv-int-chat-default-rtdb.firebaseio.com",
+  projectId: "cv-int-chat",
+  storageBucket: "cv-int-chat.appspot.com",
+  messagingSenderId: "867892740194",
+  appId: "1:867892740194:web:1f8bb23c024a338db2113b",
+  measurementId: "G-FGB9KGRW8H"
 };
 
 
