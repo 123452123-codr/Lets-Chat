@@ -1,11 +1,12 @@
 var firebaseConfig = {
-      apiKey: "AIzaSyBSN_uMmHOmoOM-UwsU8CpKiXQ0IRvK5wU",
-      authDomain: "lets-chat-pro.firebaseapp.com",
-      databaseURL: "https://lets-chat-pro-default-rtdb.firebaseio.com",
-      projectId: "lets-chat-pro",
-      storageBucket: "lets-chat-pro.appspot.com",
-      messagingSenderId: "84120085307",
-      appId: "1:84120085307:web:9b2239f97f014bac6a0d1e"
+      apiKey: "AIzaSyBJeMPQagpmNm8MGsHhw9aBlwoVU9yTegg",
+      authDomain: "enjoychatting-pro.firebaseapp.com",
+      databaseURL: "https://enjoychatting-pro-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "enjoychatting-pro",
+      storageBucket: "enjoychatting-pro.appspot.com",
+      messagingSenderId: "509860403153",
+      appId: "1:509860403153:web:1680629d8b641e2455f2f0",
+      measurementId: "G-52P9TL2VQM"
 };
 
 // Initialize Firebase
