@@ -1,3 +1,5 @@
+import "https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js";
+
 var firebaseConfig = {
       apiKey: "AIzaSyAtr61FngCCp8qjrAUWCIZiyHAl7c8ELXs",
   authDomain: "cv-int-chat.firebaseapp.com",
@@ -11,6 +13,9 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
+
+firebase.analytics().logEvent('notification_received');
 
 var user_name = localStorage.getItem("Let's Chat Website User Name");
 document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";

@@ -1,3 +1,5 @@
+import "https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js";
+
 var firebaseConfig = {
   apiKey: "AIzaSyAtr61FngCCp8qjrAUWCIZiyHAl7c8ELXs",
   authDomain: "cv-int-chat.firebaseapp.com",
@@ -11,6 +13,9 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics();
+
+firebase.analytics().logEvent('notification_received');
 
 function add_user() {
     var user_name = document.getElementById("user_name").value;
