@@ -14,7 +14,7 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const analytics = firebase.analytics();
+var analytics = firebase.analytics();
 
 firebase.analytics().logEvent('notification_received');
 
